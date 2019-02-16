@@ -29,18 +29,18 @@ function myFunctionCopy() {
 }
 </script>
 </div>
+<button id="exit" class="btn btn-danger" onclick="myLoader('pluginsLaunchApp-com.null.null-http://localhost:8080/')">Exit</button>
 <div class="container" id="ast2" style="text-align:center;display:block;">
-<button class="btn btn-danger" onclick="myLoader('pluginsLaunchApp-com.null.null-http://localhost:8080/')">Exit</button>
 <h1>Wellcome to Aegis Assist</h1>
 <p>This page will help you to found some plugins or can launch it directly.</p>
 <br>
 <h2>VPN Anti Ban PUBGM</h2>
-<button type="button" class="btn btn-primary" onclick="myLoader('pluginsLaunchApp-com.aegis.vp2n-https://aghisna12.github.io/iNoX/music.html?vpn')">Launch VPN</button>
+<button type="button" class="btn btn-primary" onclick="myLoader('pluginsLaunchApp-com.aegis.vpn-https://aghisna12.github.io/iNoX/music.html?vpn')">Launch VPN</button>
 <script>
   urlp=[];u=location.search.replace("?","").split("&").forEach(function(d){e=d.split("=");urlp[e[0]]=e[1];});
   document.title=urlp["aegis"];
   var i = location.href.split("html?");
-  if (i[0].includes("LaunchApp") === false && i[1] === "vpn") {document.getElementById("ast1").style.display = "block"; document.getElementById("ast2").style.display = "none";}
+  if (i[0].includes("LaunchApp") === false && i[1] === "vpn") {document.getElementById("ast1").style.display = "block"; document.getElementById("exit").style.display = "none"; document.getElementById("ast2").style.display = "none";}
 </script>
 <script>
 	function myLoader(params) {
