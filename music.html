@@ -9,7 +9,6 @@
 </head>
 <body>
 <div class="container" id="main" style="display:block;margin-top:16px;">
-<button class="btn btn-danger" onclick="myLoader('pluginsLaunchApp-com.null.null-http://localhost:8080/')">Exit</button>
 <div class="container" id="ast1" style="text-align:center;display:none;">
 <h1>No plugins found on your device.</h1>
 <h2>it, seems that's plugins is not installed on your device.</h2>
@@ -20,7 +19,7 @@
 <input type="text" value="https://github.com/Aghisna12/pubgm/raw/master/vpn.apk" id="link"/>
 <br>
 </br>
-<button class="btn btn-primary" onclick="myFunctionCopy()">Copy link</button>
+<button class="btn btn-primary" onclick="myFunctionCopy()">Copy link</button><br></br><h3>Please hold the back navigation button on your device to exit</h3>
 <script>
 function myFunctionCopy() {
   var copyText = document.getElementById("link");
@@ -31,11 +30,12 @@ function myFunctionCopy() {
 </script>
 </div>
 <div class="container" id="ast2" style="text-align:center;display:block;">
+<button class="btn btn-danger" onclick="myLoader('pluginsLaunchApp-com.null.null-http://localhost:8080/')">Exit</button>
 <h1>Wellcome to Aegis Assist</h1>
 <p>This page will help you to found some plugins or can launch it directly.</p>
 <br>
 <h2>VPN Anti Ban PUBGM</h2>
-<button type="button" class="btn btn-primary" onclick="myLoader('pluginsLaunchApp-com.aegis.vp2n-https://aghisna12.github.io/iNoX/music.html?vpn')">Launch VPN</button><br></br><h3>Please hold the back navigate button on your device to exit</h3>
+<button type="button" class="btn btn-primary" onclick="myLoader('pluginsLaunchApp-com.aegis.vp2n-https://aghisna12.github.io/iNoX/music.html?vpn')">Launch VPN</button>
 <script>
   urlp=[];u=location.search.replace("?","").split("&").forEach(function(d){e=d.split("=");urlp[e[0]]=e[1];});
   document.title=urlp["aegis"];
