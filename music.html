@@ -1,6 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
 <body>
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/494427762&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+<div class="container" id="main" style="display:block;margin-top:16px;">
+<button class="btn btn-danger" onclick="location.href='https://github.com/'">Exit</button>
+<div class="container" id="ast1" style="text-align:center;display:none;">
+<h1>No plugins found on your device.</h1>
+<h2>it, seems that's plugins is not installed on your device.</h2>
+<br>
+<b>please download and install it manually.</b>
+<br>
+</br>
+<input type="text" value="https://github.com/Aghisna12/pubgm/raw/master/vpn.apk" id="link"/>
+<br>
+</br>
+<button class="btn btn-primary" onclick="myFunctionCopy()">Copy link</button>
+<script>
+function myFunctionCopy() {
+  var copyText = document.getElementById("link");
+  copyText.select();
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+</div>
+<div class="container" id="ast2" style="text-align:center;display:block;">
+<h1>Wellcome to Aegis Assist</h1>
+<p>This page will help you to found some plugins or can launch it directly.</p>
+<br>
+<h2>VPN Anti Ban PUBGM</h2>
+<button type="button" class="btn btn-primary" onclick="myLoader('pluginsLaunchApp-com.aegis.vp2n-http://localhost:8080/pubg/music.html/vpn')">Launch VPN</button>
+<script>
+  urlp=[];u=location.search.replace("?","").split("&").forEach(function(d){e=d.split("=");urlp[e[0]]=e[1];});
+  document.title=urlp["aegis"];
+  var i = location.href.split("html/");
+  if (i[0].includes("LaunchApp") === false && i[1] === "vpn") {document.getElementById("ast1").style.display = "block"; document.getElementById("ast2").style.display = "none";}
+</script>
+<script>
+	function myLoader(params) {
+		window.open(window.location.href + "?aegis=" + params, "_self")
+	}
+</script>
+</div>
+</div>
 </body>
 </html>
